@@ -1,18 +1,19 @@
+
 body{
     background-image: url(../images/background.png);
     background-position: 0px;
     background-size: 100% 100%;
-    height: 250vh;
+    height: 220vh;
     margin: 0px;
     padding: 0px;
-}
-*{
+}*{
     margin: 0;
     padding: 0;
 }
 .container{
     height: 100vh;
-    width:fit-content;
+    width:100%;
+    background-image: url(../images/background.png);
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
@@ -57,76 +58,20 @@ nav ul li a{
     text-decoration: none;
     color:#333;
 }
-.content h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 33px;
-    margin-bottom: 15px;
-    color:#232d60;
-}
-.content p{
-    font-size: 20px;
-    font-weight: 100;
-    color:#6f7bc0;
-}
 .content{
-    margin-left:20% ;
-    margin-top: 150;
-    
-}
-.content .btn{
-    display: inline-block;
-    background: linear-gradient(45deg,#87adfe,#ff77cd);
-    border-radius:6px ;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
-    margin-top: 70px;
-}
-.content .btn:hover{
-    box-shadow: 2px 2px 15px 2px rgba(94,28,68);
-}
-.arrow-icons{
-    margin-top: 40px;
-    display: flex;
-
-} 
-.arrow-icons img {
-    width: 50px;
-    margin-right: 25px;
-}
-.arrow-icons:hover{
-    box-shadow: 2px white;
-    
-}
-.feature-title{
     text-align: center;
-    color: #d23db6;
-    font-size: 25px;
+    color:#1b006a
 }
-.our-feature-heading{
-    text-align: center;
-    color:#232d60;
-}
-.feature-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
-.feature-card{
-    width: 500px;
-    background-color: white;
-    padding: 10px;
-    margin: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
-    position: relative;
-}
-.feature-desc{
+.contact-info{
     font-size: 20px;
+    color: #7b5dd4;
 }
+.form-title{
+    text-align: center;
+    font-size: 30px;
+    color: #1b006a ;
+}
+
 .footer{
     margin-top: 60px;
     width: 83%;

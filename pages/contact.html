@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Studio</title>
+    <link rel="stylesheet" href="../css/contact.css"/>
+    <style>
+        form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+}
+#map {
+    height: 400px;
+    width: 100%;
+ }
+    </style>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" >
+            <img src="../images/LOGO.png" class="logo"><br><br><br>
+            <nav>
+                <ul>
+                    <li><a href ="../index.html" class="menu-btn">Home</a></li>
+                    <li><a href ="../pages/about.html" class="menu-btn">About</a></li>
+                    <li><a href ="../pages/course.html" class="menu-btn">Courses</a></li>
+                    <li><a href ="../pages/contact.html" class="menu-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="content">
+            <h1> To know more about us, contact below:</h1>
+            <br/><br/>
+            <p class="contact-info"> Phone No: 1485927895</p>
+            <p class="contact-info"> Address: Modern Dance Vibe, Second Floor, Kumar Plaza, Pune</p>
+            <p class="contact-info"> Email: moderndancevibe@gmail.com</p>
+        </div>
+        <br/><br/>
+        <div id="map">
+            <script>
+                function initMap() {
+                   var location = {lat: -25.363, lng: 131.044}; // Coordinates for the desired location
+                   var map = new google.maps.Map(document.getElementById('map'), {
+                     zoom: 4,
+                     center: location
+                   });
+                   var marker = new google.maps.Marker({
+                     position: location,
+                     map: map
+                   });
+                }
+               </script>
+        </div>
+        <br/><br/><br/>
+        <div class="feedback-form">
+            <h2 class="form-title">Feedback Form</h2>
+
+<form action="/submit_feedback" method="post">
+ <label for="fname">First Name</label>
+ <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+ <label for="lname">Last Name</label>
+ <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+ <label for="email">Email</label>
+ <input type="text" id="email" name="email" placeholder="Your email..">
+
+ <label for="message">Message</label>
+ <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+ <input type="submit" value="Submit">
+</form>
+        </div>
+        <div class="footer">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <span>About</span><br><br>
+                <span>Services</span><br><br>
+                <span>Contact</span><br><br>
+                <span>Shop</span><br><br>
+                <span>Blog</span><br><br>
+            </div>
+            <div class="col-2">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="your email address"><br>
+                    <button type="submit">subscribe now</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>Contact Information</h3>
+                <p>Deolali Pravara</p><br>
+                <p>Pune</p><br>
+                <p>Nagpur</p><br>
+                <p>Mumbai</p><br>
+                <br>
+                
+            </div>
+    </div>
+</body>
+</html>
